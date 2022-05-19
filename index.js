@@ -1,6 +1,14 @@
 const tagsEl = document.getElementById("tags");
 const textarea = document.getElementById("textarea");
 
+const dark = document.body;
+
+dark.addEventListener("click", (e) => {
+  e.preventDefault();
+  dark.classList.toggle("dark-mode");
+
+});
+
 textarea.focus();
 
 textarea.addEventListener("keyup", (e) => {
