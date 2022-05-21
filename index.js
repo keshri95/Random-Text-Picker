@@ -3,11 +3,9 @@ const textarea = document.getElementById("textarea");
 
 const dark = document.body;
 
-dark.addEventListener("click", (e) => {
-  e.preventDefault();
-  dark.classList.toggle("dark-mode");
-
-});
+function lightDarkMode(){
+  dark.classList.toggle('dark-mode');
+}
 
 textarea.focus();
 
